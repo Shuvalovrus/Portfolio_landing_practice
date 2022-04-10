@@ -26,6 +26,9 @@
         <main class="main">
             <section class="person">
                 <div class="person__container">
+                    <div class="person__menu-icon icon-menu">
+                        <span></span>
+                    </div>
                     <div class="person__content">
                         <h1 class="person__title">Denis Novik</h1>
                         <div class="person__text">UX | UI designer 24 years old, Minsk</div>
@@ -36,7 +39,10 @@
                         </div>
                     </div>
                     <div class="person__image">
-                        <img src="/img/person.png" alt="Author photo">
+                        <picture>
+                            <source media="(max-width: 550px)" srcset="img/person_mobile.png">
+                            <img src="/img/person.png" alt="Author photo">
+                        </picture>
                     </div>
                 </div>
             </section>

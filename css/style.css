@@ -43,6 +43,7 @@ body {
 }
 .header__menu {
 }
+/*==============================================*/
 .menu {
 }
 .menu__list {
@@ -55,8 +56,62 @@ body {
 }
 .menu__link {
     color:  #828282;
+    transition: color 0.3s;
 }
 .menu__link:hover {
     color:  #070707;
 }
 /* /HEADER */
+
+/* PERSON */
+.person {
+    padding: 40px 0 105px 0;
+}
+.person__container {
+}
+.person__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.person__title {
+    flex: 0 1 125px;
+    font-size: 47px;
+    line-height: 59px;
+}
+.person__text {
+    flex: 0 1 155px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+}
+.person__switch {
+    flex: 0 1 auto;
+    text-align: end;
+}
+.switch__body {
+    writing-mode: tb-rl;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+.person__image {
+}
+.person__image img {
+    width: 100%;
+}
+/*==============================================*/
+.switch {
+}
+.switch__button {
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+}
+.switch__button_active {
+    color:  #070707;
+}
+.switch__button_ru {
+}
+.switch__button_eng {
+}
+/* /PERSON */

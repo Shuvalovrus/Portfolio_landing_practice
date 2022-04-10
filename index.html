@@ -12,23 +12,30 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
-                    </ul>
-                </nav>
+                <div class="header__menu-icon icon-menu">
+                    <span></span>
+                </div>
+                <div class="menu__body">
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+                            <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+                        </ul>
+                        <div class="header__switch switch">
+                            <div class="switch__body">
+                                <a href="#" class="switch__button switch__button_ru">RU</a> | <a href="#" class="switch__button switch__button_eng switch__button_active">ENG</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="main">
             <section class="person">
                 <div class="person__container">
-                    <div class="person__menu-icon icon-menu">
-                        <span></span>
-                    </div>
                     <div class="person__content">
                         <h1 class="person__title">Denis Novik</h1>
                         <div class="person__text">UX | UI designer 24 years old, Minsk</div>
@@ -51,5 +58,6 @@
             footer
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

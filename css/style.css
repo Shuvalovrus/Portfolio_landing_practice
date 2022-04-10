@@ -23,6 +23,9 @@ body {
     font-weight: 700;
     font-size: 18px;
 }
+body._lock {
+    overflow: hidden;
+}
 .wrapper {
     overflow: hidden;
     display: flex;
@@ -65,6 +68,9 @@ body {
 /*==============================================*/
 .menu {
 }
+.menu__body {
+    position: relative;
+}
 .menu__list {
     display: flex;
     justify-content: space-between;
@@ -86,17 +92,25 @@ body {
 .icon-menu {
     display: none;
 }
+.header__switch {
+    position: absolute;
+    display: none;
+}
 @media (max-width: 767.98px) {
+    .header__container {
+        /*position: relative;*/
+    }
     .icon-menu {
         display: block;
         right: 15px;
-        top: 12px;
+        top: 52px;
         position: absolute;
         width: 33px;
         height: 19px;
         cursor: pointer;
-        z-index: 5;
+        z-index: 51;
     }
+
     .icon-menu span,
     .icon-menu::before,
     .icon-menu::after {
@@ -107,26 +121,82 @@ body {
         transition: all 0.3s ease 0s;
         background-color: #000;
     }
+
     .icon-menu::before,
     .icon-menu::after {
         content: "";
     }
+
     .icon-menu::before {
         top: 0;
     }
+
     .icon-menu::after {
         bottom: 0;
     }
+
     .icon-menu span {
         top: 50%;
         transform: scale(1) translate(0, -50%);
     }
+    .header__menu {
+        background-color: #fff;
+        z-index: 50;
+        position: fixed;
+        left: -100%;
+        top: 49px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
 
     .menu__list {
-        display: none;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: flex-start;
+    }
+
+    .menu__list > .menu__item {
+        margin: 0 0 68px 0;
+    }
+
+    .menu__list > .menu__item:last-child {
+        margin: 0;
+    }
+    .header__switch {
+        display: block;
+        position: absolute;
+        bottom: 55px;
+        right: 15px;
+        z-index: 50;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .menu__link {
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .menu {
+        padding: 0 0 0 26px;
+        transition: left 0.3s ease 0s;
+        overflow: auto;
+    }
+    .menu::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* Высота header */
+        height: 52px;
+        /* /Высота header */
+        background-color: #fff;
+        z-index: 10;
+    }
+    .menu._active {
+        left: 0;
     }
 }
-
 /* /HEADER */
 
 /* PERSON */
@@ -196,6 +266,12 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #828282;
+}
+@media (max-width: 767.98px) {
+    .switch__button {
+        font-size: 32px;
+        line-height: 44px;
+    }
 }
 .switch__button_active {
     color:  #070707;

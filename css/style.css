@@ -4,6 +4,7 @@
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
     src: local("Gilroy"),
     url("../fonts/gilroy-medium.woff2") format("woff2"),
     url("../fonts/gilroy-medium.woff") format("woff");
@@ -12,6 +13,7 @@
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     src: local("Gilroy"),
     url("../fonts/gilroy-bold.woff2") format("woff2"),
     url("../fonts/gilroy-bold.woff") format("woff");
@@ -118,7 +120,7 @@ body._lock {
     .icon-menu {
         display: block;
         right: 15px;
-        top: 52px;
+        top: 75px;
         position: absolute;
         width: 33px;
         height: 19px;

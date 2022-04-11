@@ -32,6 +32,10 @@ body._lock {
     flex-direction: column;
     min-height: 100%;
 }
+.section-title {
+    text-align: center;
+    font-size: 34px;
+}
 [class*="__container"] {
     max-width: 975px;
     margin: 0 auto;
@@ -311,8 +315,7 @@ body._lock {
 .about-me__container {
 }
 .about-me__title {
-    font-size: 34px;
-    margin: 0 0 17px 0;
+    margin-bottom: 18px;
 }
 .about-me__text {
 
@@ -324,5 +327,75 @@ body._lock {
 .about-me__paragraph:last-child {
     margin: 0;
 }
-
 /* /ABOUT-ME */
+/* SKILLS */
+.skills {
+    padding: 91px 0 110px 0;
+}
+.skills__container {
+}
+.skills__title {
+    margin-bottom: 67px;
+}
+.skills__subtitle {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 83px;
+}
+.skills__skills-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skills__skill-item {
+}
+@media (max-width: 767.98px) {
+    .skills__skills-group {
+        flex-direction: column;
+    }
+    .skills__skill-item {
+        margin-bottom: 80px;
+    }
+    .skills__skill-item:last-child {
+        margin-bottom: 0;
+    }
+}
+/*==============================================*/
+.item-skill {
+    text-align: center;
+    flex: 0 1 165px;
+}
+.item-skill__icon {
+    margin-bottom: 24px;
+}
+.item-skill__name {
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-bottom: 40px;
+}
+.item-skill__skill-progress {
+}
+/*==============================================*/
+.progress-skill {
+    display: inline-block;
+}
+.progress-skill__star,
+.progress-skill__star._active {
+    display: inline-block;
+    width: 22px; height: 20px;
+    margin-right: 9px;
+}
+.progress-skill__star:last-child,
+.progress-skill__star._active:last-child {
+    margin-right: 0;
+}
+
+.progress-skill__star {
+    background: url('../img/css_sprites.png') -52px -10px;
+}
+.progress-skill__star._active {
+    background: url('../img/css_sprites.png') -10px -10px
+}
+/* /SKILLS */

@@ -30,9 +30,6 @@ body {
     margin: 0;
 }
 
-html, body {
-    overflow-x: hidden;
-}
 /**
  * Render the `main` element consistently in IE.
  */

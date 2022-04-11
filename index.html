@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
-<body>
+<body class="page">
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
@@ -18,11 +18,11 @@
                 <div class="menu__body">
                     <nav class="header__menu menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Skills</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">Contacts</a></li>
+                            <li class="menu__item"><a data-goto=".page__section_1" href="#" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a data-goto=".page__section_2" href="#" class="menu__link">About me</a></li>
+                            <li class="menu__item"><a data-goto=".page__section_3" href="#" class="menu__link">Skills</a></li>
+                            <li class="menu__item"><a data-goto=".page__section_4" href="#" class="menu__link">Portfolio</a></li>
+                            <li class="menu__item"><a data-goto=".page__section_5" href="#" class="menu__link">Contacts</a></li>
                         </ul>
                         <div class="header__switch switch">
                             <div class="switch__body">
@@ -34,7 +34,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="person">
+            <section class="person page__section page__section_1">
                 <div class="person__container">
                     <div class="person__content">
                         <h1 class="person__title">Denis Novik</h1>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about-me">
+            <section class="about-me page__section page__section_2">
                 <div class="about-me__container">
                     <div class="about-me__content">
                         <h2 class="about-me__title section-title">About me</h2>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </section>
-            <section class="skills">
+            <section class="skills page__section page__section_3">
                 <div class="skills__container">
                     <h2 class="skills__title section-title">Skills</h2>
                     <p class="skills__subtitle section-subtitle">I work in such programs as</p>
@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio page__section page__section_4">
                 <div class="portfolio__container">
                     <h2 class="portfolio__title section-title">Portfolio</h2>
                     <div class="portfolio__item">
@@ -149,7 +149,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer page__section page__section_5">
             <div class="footer__container">
                 <h2 class="footer__title section-title">Contacts</h2>
                 <p class="footer__subtitle section-subtitle">Want to know more or just chat? You are welcome!</p>

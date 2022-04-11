@@ -68,6 +68,12 @@ body._lock {
 
 /* HEADER */
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    min-height: 88px;
 }
 .header__container {
     position: relative;
@@ -225,7 +231,7 @@ body._lock {
 
 /* PERSON */
 .person {
-    padding: 40px 0 105px 0;
+    padding: 128px 0 105px 0;
 }
 .person__container {
     display: flex;
@@ -459,6 +465,7 @@ body._lock {
     border-radius: 30px;
     color: #fff;
     margin-bottom: 85px;
+    cursor: pointer;
 }
 .footer__social {
     margin-bottom: 45px;
@@ -507,7 +514,4 @@ body._lock {
     }
 }
 
-@media (max-width: 767.98px) {
-
-}
 /* /FOOTER */

@@ -273,6 +273,9 @@ body._lock {
     width: 100%;
 }
 @media (max-width: 767.98px) {
+    .person {
+        padding: 65px 0 83px 0;
+    }
     .person__title {
         flex: 0 1 auto;
         margin: 0 0 23px 0;
@@ -337,6 +340,11 @@ body._lock {
 .about-me__paragraph:last-child {
     margin: 0;
 }
+@media (max-width: 767.98px) {
+    .about-me {
+        padding: 80px 0 75px 0;
+    }
+}
 /* /ABOUT-ME */
 /* SKILLS */
 .skills {
@@ -359,6 +367,9 @@ body._lock {
 .skills__skill-item {
 }
 @media (max-width: 767.98px) {
+    .skills {
+        padding: 83px 0 98px 0;
+    }
     .skills__skills-group {
         flex-direction: column;
     }
@@ -436,6 +447,15 @@ body._lock {
     font-weight: 500;
     line-height: 22px;
     color: #070707;
+    transition: color 0.3s ease 0s;
+}
+.portfolio__link:hover {
+    color: #8d7c7c;
+}
+@media (max-width: 767.98px) {
+    .portfolio {
+        padding: 81px 0 80px 0;
+    }
 }
 /* /PORTFOLIO */
 
@@ -466,6 +486,11 @@ body._lock {
     color: #fff;
     margin-bottom: 85px;
     cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+.footer__button:hover {
+    opacity: .7;
 }
 .footer__social {
     margin-bottom: 45px;
@@ -502,6 +527,11 @@ body._lock {
     width: 48px;
     height: 49px;
     background: url('../img/social_sprites.png') -10px -10px;
+}
+@media (max-width: 767.98px) {
+    .footer {
+        padding: 82px 0 90px 0;
+    }
 }
 @media (max-width: 479.98px) {
     .social,

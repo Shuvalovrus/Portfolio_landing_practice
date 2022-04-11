@@ -62,6 +62,7 @@ body._lock {
 .header {
 }
 .header__container {
+    position: relative;
 }
 .header__menu {
 }
@@ -97,9 +98,6 @@ body._lock {
     display: none;
 }
 @media (max-width: 767.98px) {
-    .header__container {
-        /*position: relative;*/
-    }
     .icon-menu {
         display: block;
         right: 15px;
@@ -138,6 +136,21 @@ body._lock {
     .icon-menu span {
         top: 50%;
         transform: scale(1) translate(0, -50%);
+    }
+    .icon-menu._active span{
+        transform: scale(0) translate(0,-50%);
+    }
+    .icon-menu._active::before,
+    .icon-menu._active::after {
+        background-color: #828282;
+    }
+    .icon-menu._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    .icon-menu._active::after {
+        top: 50%;
+        transform: rotate(45deg) translate(0, -50%);
     }
     .header__menu {
         background-color: #fff;
@@ -181,7 +194,7 @@ body._lock {
         transition: left 0.3s ease 0s;
         overflow: auto;
     }
-    .menu::before {
+    .menu._active::before {
         content: "";
         position: fixed;
         width: 100%;
@@ -191,7 +204,7 @@ body._lock {
         height: 52px;
         /* /Высота header */
         background-color: #fff;
-        z-index: 10;
+        z-index: 50;
     }
     .menu._active {
         left: 0;

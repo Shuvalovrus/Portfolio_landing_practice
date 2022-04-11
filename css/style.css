@@ -399,3 +399,34 @@ body._lock {
     background: url('../img/css_sprites.png') -10px -10px
 }
 /* /SKILLS */
+
+/* PORTFOLIO */
+.portfolio {
+    background-color: #F6F6F6;
+    padding: 112px 0 95px 0;
+}
+.portfolio__container {
+}
+.portfolio__title {
+    margin-bottom: 47px;
+}
+.portfolio__item {
+    text-align: center;
+    margin: 0 0 100px 0;
+}
+.portfolio__item:last-child {
+    margin: 0 0 0 0;
+}
+.portfolio__image {
+    margin-bottom: 45px;
+}
+.portfolio__image img {
+    width: 100%;
+}
+.portfolio__link {
+    text-decoration: underline;
+    font-weight: 500;
+    line-height: 22px;
+    color: #070707;
+}
+/* /PORTFOLIO */

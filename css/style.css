@@ -297,3 +297,32 @@ body._lock {
 .switch__button_eng {
 }
 /* /PERSON */
+
+/* ABOUT-ME */
+.about-me {
+    background-color: #F6F6F6;
+    padding: 120px 0 107px 0;
+}
+.about-me__content {
+    margin: 0 auto;
+    max-width: 465px;
+    text-align: center;
+}
+.about-me__container {
+}
+.about-me__title {
+    font-size: 34px;
+    margin: 0 0 17px 0;
+}
+.about-me__text {
+
+}
+.about-me__paragraph {
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+.about-me__paragraph:last-child {
+    margin: 0;
+}
+
+/* /ABOUT-ME */

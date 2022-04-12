@@ -27,6 +27,7 @@ body {
 }
 body._lock {
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 .wrapper {
     overflow: hidden;
@@ -176,15 +177,13 @@ body._lock {
         z-index: 50;
         position: fixed;
         left: -100%;
-        top: 49px;
+        top: 0;
         width: 100%;
         height: 100%;
-        overflow: auto;
     }
 
     .menu__list {
         flex-direction: column;
-        justify-content: normal;
         align-items: flex-start;
     }
 
@@ -209,22 +208,20 @@ body._lock {
         line-height: 42px;
     }
     .menu {
-        padding: 0 0 0 26px;
+        padding: 65px 0 0 26px;
         transition: left 0.3s ease 0s;
         overflow: auto;
     }
-    .menu._active::before {
-        content: "";
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        /* Высота header */
-        height: 52px;
-        /* /Высота header */
-        background-color: #fff;
-        z-index: 50;
-    }
+    /*.menu._active .menu__body::before {*/
+    /*    content: "";*/
+    /*    position: absolute;*/
+    /*    width: 100%;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    height: 52px;*/
+    /*    background-color: #fff;*/
+    /*    z-index: 50;*/
+    /*}*/
     .menu._active {
         left: 0;
     }
